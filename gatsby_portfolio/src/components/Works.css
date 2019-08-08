@@ -1,0 +1,17 @@
+.workItem {
+  margin-left:16px 0;
+}
+
+.workItem-category {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing:5px;
+  margin: 6px 0 2px;
+  color: #4caf50;
+}
+
+.workItem-title {
+  font-weight: 600;
+}
