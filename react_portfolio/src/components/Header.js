@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 const Base = styled.header`
@@ -27,7 +28,7 @@ const Nav = styled.nav`
   margin-left: auto;
 `;
 
-const NavItem = styled.a`
+const NavItem = styled(Link)`
   color: white;
   font-size: 15px;
   margin-left: 20px;
@@ -39,10 +40,12 @@ const NavItem = styled.a`
 const Header = () => {
   return (
     <Base>
-      <Title>slintristeza Portfolio</Title>
+      <Title to="/">slintristeza Portfolio</Title>
       <Nav>
-        <NavItem href="#about">About</NavItem>
-        <NavItem href="#works">Works</NavItem>
+        <NavItem to="/">Home</NavItem>
+        <NavItem to="#about">About</NavItem>
+        <NavItem to="#works">Works</NavItem>
+        <NavItem to="/contact">Contact</NavItem>
       </Nav>
     </Base>
   );
