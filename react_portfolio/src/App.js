@@ -5,9 +5,7 @@ import { Helmet } from "react-helmet";
 import "./App.css";
 import { colors } from "./components/styleHelper";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Works from "./components/Works";
+import Home from "./components/Home";
 import Footer from "./components/Footer";
 
 const Base = styled.div`
@@ -25,9 +23,7 @@ const App = () => {
         <meta name="description" content="primer of Gatyby.js" />
       </Helmet>
       <Header />
-      <Hero />
-      <About />
-      <Works />
+      <Home />
       <Footer />
     </Base>
   );
