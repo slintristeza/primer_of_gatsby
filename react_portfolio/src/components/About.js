@@ -1,13 +1,20 @@
 import React from 'react';
-import './About.css';
+import styled from 'styled-components';
+
+import { Section, SectionTitle } from './styleHelper';
+
+const Description = styled.p`
+  font-size: 14px;
+  line-height: 1;
+`
 
 const About = () => {
   return (
-    <section className="section" id="about">
-      <h2 className="section-title">About Skill</h2>
-      <p className="aboutDexcription">React, Gatsby, Vue, Firebase, Java, PHP</p>
-    </section>
-  );
+    <Section id="about">
+      <SectionTitle>About Skill</SectionTitle>
+      <Description>React, Gatsby, Vue, Firebase, Java, PHP</Description>
+    </Section>
+  )
 };
 
 export default About;

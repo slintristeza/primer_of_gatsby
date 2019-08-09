@@ -1,13 +1,21 @@
 import React from 'react';
-import './Footer.css'
+import styled from 'styled-components';
+
+import { colors } from './styleHelper';
+
+const Base = styled.footer`
+  font-size: 12px;
+  text-align: center;
+  padding: 16px 0;
+  background-color: ${colors.black};
+  color: white;
+`
 
 const Footer = () => {
   return (
-    <foorer className="foorer">
-      <a href="https://twitter.com/slintristeza">Twitter</a>
-      <br/>
+    <Base>
       Copyright &copy: slintristeza. All right All Rights Reserved.
-    </foorer>
+    </Base>
   )
 };
 
