@@ -1,34 +1,17 @@
 import React from 'react'
-import './Works.css'
+
+import WorkItem from './WorkItem';
 
 const Works = () => {
   return (
-    <>
     <section className="section" id="works">
       <h2 className="section-title">Works</h2>
       <ul>
-        <li className="workItem">
-          <img
-            className="workItem-image"
-            src="https://dummyimage.com/600x300/eee/ccc"
-            alt="work 1"
-          />
-          <h3 className="workItem-category">2019/07 - Frontend</h3>
-          <h3 className="workItem-title">React.js</h3>
-        </li>
-        <li className="workItem-image">
-          <img
-            className="workItem-image"
-            src="https://dummyimage.com/600x300/eee/ccc"
-            alt="work 2"
-          />
-          <h3 className="workItem-category">2019/06 - Frontend</h3>
-          <h3 className="workItem-title">Vue.js</h3>
-        </li>
+        <WorkItem title="React.js" category="2019/7 - Frontend" />
+        <WorkItem title="Vue.js" category="2019/8 - Frontend" />
       </ul>
     </section>
-    </>
-  );
+  )
 };
 
 export default Works;
