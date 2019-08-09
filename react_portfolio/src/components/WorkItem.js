@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { colors, poppins } from './styleHelper';
+import { colors, poppins } from "./styleHelper";
 
 const Base = styled.li`
   margin: 16px 0;
@@ -14,12 +14,12 @@ const Category = styled.p`
   line-height: 1;
   letter-spacing: 5px;
   margin: 6px 0 2px;
-  color: ${colors.green}
+  color: ${colors.green};
 `;
 
 const Title = styled.p`
   font-weight: 600;
-`
+`;
 
 const WorkItem = props => {
   return (
@@ -34,7 +34,7 @@ const WorkItem = props => {
         <Title>{props.title}</Title>
       </Base>
     </>
-  )
-}
+  );
+};
 
-export default WorkItem
+export default WorkItem;

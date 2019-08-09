@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { colors } from './styleHelper';
+import { colors } from "./styleHelper";
 
 const Base = styled.footer`
   font-size: 12px;
@@ -9,14 +9,12 @@ const Base = styled.footer`
   padding: 16px 0;
   background-color: ${colors.black};
   color: white;
-`
+`;
 
 const Footer = () => {
   return (
-    <Base>
-      Copyright &copy: slintristeza. All right All Rights Reserved.
-    </Base>
-  )
+    <Base>Copyright &copy: slintristeza. All right All Rights Reserved.</Base>
+  );
 };
 
 export default Footer;

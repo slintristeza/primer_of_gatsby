@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-import { Section, SectionTitle } from'./styleHelper';
-import WorkItem from './WorkItem';
+import { Section, SectionTitle } from "./styleHelper";
+import WorkItem from "./WorkItem";
 
 const Works = () => {
   return (
@@ -12,7 +12,7 @@ const Works = () => {
         <WorkItem title="Vue.js" category="2019/8 - Frontend" />
       </ul>
     </Section>
-  )
+  );
 };
 
 export default Works;
