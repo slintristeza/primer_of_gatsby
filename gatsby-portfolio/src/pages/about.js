@@ -1,15 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const AboutPgae = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hello Great Gatsby</h1>
-    <Link to="/about/">Go to about page</Link>
+    <SEO title="about" />
+    <h1>I"m slintristeza</h1>
+    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
-export default IndexPage
+export default AboutPgae
