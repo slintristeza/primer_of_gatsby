@@ -12,7 +12,9 @@ const IndexPage = ({ data }) => (
       const study = edge.node
       return (
         <div>
-          {study.title} - {study.category} - {study.year}/{study.month}
+          <Link to={`studys/${study.slug}`}>
+            {study.title} - {study.category} - {study.year}/{study.month}
+          </Link>
         </div>
       )
     })}
@@ -29,6 +31,7 @@ export const query = graphql`
           category
           year
           month
+          slug
         }
       }
     }

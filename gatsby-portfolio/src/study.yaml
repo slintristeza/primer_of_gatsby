@@ -3,8 +3,10 @@
   year: 2019
   month: 7
   description: Study on React.js
+  slug: vue-js-study
 - title: Vue.js
   category: Frontend Framework
   year: 2019
   month: 6
   description: Study on Vue.js
+  slug: react-js-study
