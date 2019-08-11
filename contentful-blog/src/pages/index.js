@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => (
     {data.allContentfulPost.edges.map(edge => {
       const author = edge.node.author
       return (
-        <div>
+        <div key={edge.node.contentful_id}>
           <Link to={`/posts/${edge.node.slug}`}>{edge.node.title}</Link>
           {edge.node.author.avatar && (
             <img width={40} src={author.avatar.fixed.src} alt={author.name} />
@@ -26,6 +26,7 @@ export const query = graphql`
     allContentfulPost {
       edges {
         node {
+          contentful_id
           slug
           title
           content {
