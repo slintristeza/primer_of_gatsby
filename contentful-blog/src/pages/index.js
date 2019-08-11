@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => (
       const author = edge.node.author
       return (
         <div>
-          <h2>{edge.node.title}</h2>
+          <Link to={`/posts/${edge.node.slug}`}>{edge.node.title}</Link>
           {edge.node.author.avatar && (
             <img width={40} src={author.avatar.fixed.src} alt={author.name} />
           )}
@@ -26,6 +26,7 @@ export const query = graphql`
     allContentfulPost {
       edges {
         node {
+          slug
           title
           content {
             content
