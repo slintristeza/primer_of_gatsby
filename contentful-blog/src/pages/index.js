@@ -1,10 +1,16 @@
 import React from "react"
+import Helmet from "react-helmet"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
   <Layout>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>slintristeza Portfolio</title>
+      <meta name="description" content="primer of Gatyby.js & contentful" />
+    </Helmet>
     {data.allContentfulPost.edges.map(edge => {
       const author = edge.node.author
       return (
