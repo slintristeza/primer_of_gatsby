@@ -28,7 +28,16 @@ const Nav = styled.nav`
   margin-left: auto;
 `;
 
-const NavItem = styled(Link)`
+const NavItemLink = styled(Link)`
+  color: white;
+  font-size: 15px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+`;
+
+const NavItem = styled.a`
   color: white;
   font-size: 15px;
   margin-left: 20px;
@@ -42,10 +51,10 @@ const Header = () => {
     <Base>
       <Title to="/">slintristeza Portfolio</Title>
       <Nav>
-        <NavItem to="/">Home</NavItem>
-        <NavItem to="#about">About</NavItem>
-        <NavItem to="#works">Works</NavItem>
-        <NavItem to="/contact">Contact</NavItem>
+        <NavItemLink to="/">Home</NavItemLink>
+        <NavItem href="#about">About</NavItem>
+        <NavItem href="#works">Works</NavItem>
+        <NavItemLink to="/contact">Contact</NavItemLink>
       </Nav>
     </Base>
   );
